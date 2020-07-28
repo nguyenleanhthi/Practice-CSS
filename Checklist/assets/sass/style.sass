@@ -1,0 +1,91 @@
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap')
+body
+    font-family: 'Roboto', sans-serif
+    display: flex
+    align-items: center
+    justify-content: center
+    height: 100vh
+    background-image: linear-gradient(to right top, #1f0723, #260b34, #2a0e47, #28135d, #1b1b74)
+    margin: 0
+    padding: 0
+
+.list-item
+    width: 350px
+    border-radius: 10px
+    background-image: linear-gradient(to right top, #25082a, #330f45, #3d1963, #402685, #3636aa)
+    box-shadow: 0 5px 25px rgba(0, 0, 0, .8)
+    overflow: hidden
+.item
+    display: grid
+    grid-template-columns: 1fr 6fr 1fr
+    align-items: center
+    justify-content: center
+    width: 100%
+    height: 50px
+    border-top: 1px solid rgba(0, 0, 0, .4)
+    color: rgba(255, 255, 255, .4)
+    position: relative
+    input[type="checkbox"], span
+        margin: auto
+    input[type="checkbox"]
+        appearance: none
+        width: 16px
+        height: 16px
+        border: 2px solid rgba(255, 255, 255, .4)
+        border-radius: 4px
+        outline: none
+        position: relative
+        display: flex
+        justify-content: center
+        align-items: center
+        transition: all .4s
+        cursor: pointer
+        z-index: 2
+        &:checked
+            border: 2px solid aqua
+            box-shadow: 0 0 5px aqua
+            &::before
+                opacity: 1
+            & ~ label
+                color: #FFF
+                &::before
+                    left: 120%
+            & ~ span
+                color: aqua
+                animation: icon-animation .2s linear
+        &:hover
+            transform: scale(1.3)
+        &::before
+            opacity: 0
+            content: '\f00c'
+            font-family: fontAwesome
+            width: 10px
+            height: 10px
+            font-size: 10px
+            position: absolute
+            color: aqua
+    label::before
+        content: ''
+        width: 150px
+        height: 100%
+        position: absolute
+        top: 0
+        left: -100px
+        background-color: rgba(0, 0, 0, .1)
+        transform: skew(45deg)
+        transition: all .2s
+    &:first-child
+        border-top: none
+@keyframes icon-animation
+    0%
+        opacity: 0
+        transform: scale(.1)
+    50%
+        transform: rotate(-20deg)
+    75%
+        transform: rotate(20deg)
+    100%
+        opacity: 1
+        transform: scale(1)
+        

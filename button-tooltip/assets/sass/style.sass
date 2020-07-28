@@ -1,0 +1,82 @@
+body
+    display: flex
+    justify-content: space-around
+    align-items: center
+    height: 100vh
+    margin: 0
+    background-image: linear-gradient(to left top, #051937, #004d7a, #008793, #00bf72, #a8eb12)
+
+button
+    cursor: pointer
+
+.btn-animation
+    width: 100px
+    height: 100px
+    border-radius: 50%
+    background: transparent
+    outline: none
+    font-size: 30px
+    box-shadow: 0 5px 15px #000
+    transition: all .2s
+    position: relative
+    &:hover
+        transform: translate(0, -10px)
+        box-shadow: 0 15px 15px #000
+        &::before
+            opacity: 1
+            top: -100%
+        &::after
+            opacity: 1
+            top: -50%
+    &:active
+        transform: translate(2px, 0)
+    &::before
+        opacity: 0
+        content: attr(data-content)
+        font-size: 20px
+        position: absolute
+        top: 0
+        left: 50%
+        width: 150%
+        padding: 10px
+        transform: translateX(-50%)
+        border-radius: 10px
+        transition: all .4s cubic-bezier(0.68, -0.55, 0.26, 1.55)
+    &::after
+        opacity: 0
+        content: ''
+        position: absolute
+        border-left: 8px solid transparent
+        border-right: 8px solid transparent
+        border-top: 8px solid #fff
+        top: -0
+        left: 50%
+        transform: translateX(-50%)
+        transition: all .4s cubic-bezier(0.68, -0.55, 0.26, 1.55)
+    &:nth-child(1)
+        border: 2px solid #ff0000
+        color: #ff0000
+        &:hover
+            background-color: #ff0000
+            color: #000000
+            &::before
+                color: #ff0000
+        &::before
+            border: 2px solid #ff0000
+        &::after
+            border-top-color: #ff0000
+    &:nth-child(2)
+        border: 2px solid #00ff00
+        color: #00ff00
+        &:hover
+            background-color: #00ff00
+            color: #000000
+            &::before
+                color: #00ff00
+        &::before
+            border: 2px solid #00ff00
+        &::after
+            border-top-color: #00ff00
+
+    
+        

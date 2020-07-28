@@ -1,0 +1,52 @@
+/*
+Error: Invalid CSS after "body font-family:": expected pseudoclass or pseudoelement, was " "Roboto","
+        on line 1 of E:\Practice css\image-3D\assets\sass\style.sass
+
+1: body font-family: "Roboto",
+2: sans-serif color: #333333 display: grid grid-template-columns: repeat(3, 1fr) grid-gap: 1rem margin: 0 box-sizing: border-box .wrapper display: flex justify-content: center align-items: center background-color: #DDD transition: all .2s cursor: pointer &:hover background-color: #AAA .box .card transform: translate(50px, -50px) background-color: rgba(255, 255, 255, .4) .box display: inline-block position: relative transform: rotate(-30deg) skew(25deg) scale(.4) box-shadow: -4px 4px 10px rgba(0, 0, 0, .4) border-radius: 8px background-color: #FFF .card padding: 10px background-color: transparent border: 1px solid gray transition: all .2s .title text-align: center font-weight: bold @media (max-width: 992px) .wrapper grid-column: span 3 .box transform: rotate(-30deg) skew(25deg) scale(0.3) gsdfg
+
+Backtrace:
+E:\Practice css\image-3D\assets\sass\style.sass:1
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1278:in `expected'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1208:in `expected'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1203:in `tok!'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/static_parser.rb:285:in `pseudo'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/static_parser.rb:166:in `simple_selector_sequence'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/static_parser.rb:118:in `selector'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/static_parser.rb:86:in `selector_comma_sequence'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1186:in `expr!'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/static_parser.rb:20:in `parse_selector'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:438:in `visit_rule'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:161:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:10:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
+C:/Program Files (x86)/Koala/bin/sass:22:in `load'
+C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"body font-family:\": expected pseudoclass or pseudoelement, was \" \"Roboto\",\"\A         on line 1 of E:\Practice css\image-3D\assets\sass\style.sass\A \A 1: body font-family: \"Roboto\",\A 2: sans-serif color: #333333 display: grid grid-template-columns: repeat(3, 1fr) grid-gap: 1rem margin: 0 box-sizing: border-box .wrapper display: flex justify-content: center align-items: center background-color: #DDD transition: all .2s cursor: pointer &:hover background-color: #AAA .box .card transform: translate(50px, -50px) background-color: rgba(255, 255, 255, .4) .box display: inline-block position: relative transform: rotate(-30deg) skew(25deg) scale(.4) box-shadow: -4px 4px 10px rgba(0, 0, 0, .4) border-radius: 8px background-color: #FFF .card padding: 10px background-color: transparent border: 1px solid gray transition: all .2s .title text-align: center font-weight: bold @media (max-width: 992px) .wrapper grid-column: span 3 .box transform: rotate(-30deg) skew(25deg) scale(0.3) gsdfg"; }
